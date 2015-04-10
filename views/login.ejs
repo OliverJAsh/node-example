@@ -1,0 +1,7 @@
+<% if (error) { %>
+    <p>Login failed!</p>
+<% } %>
+<% if (typeof email !== 'undefined') { %>
+    <p>You used email <%= email %></p>
+<% } %>
+<form method="POST"><input name="email"><input type="submit"></form>
